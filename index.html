@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #020617;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #1e293b;
+    }
+
+    header h1 {
+      font-size: 28px;
+      color: #38bdf8;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #94a3b8;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #38bdf8;
+      border-left: 4px solid #38bdf8;
+      padding-left: 10px;
+    }
+
+    .card {
+      background: #020617;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      border: 1px solid #1e293b;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #1e293b;
+      padding: 8px 12px;
+      margin: 5px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    .projects a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    .projects a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      border-top: 1px solid #1e293b;
+      font-size: 14px;
+    }
+
+    img.profile {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 2px solid #38bdf8;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img src="your-photo.jpg" alt="Profile Photo" class="profile">
+    <h1>Your Name</h1>
+    <p>Your Tagline / Short Intro</p>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="card">
+      <p>
+        Write a short introduction about yourself here. Mention your background,
+        goals, and what you are passionate about.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>TypeScript</span>
+      <span>Git</span>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>Job Title / Role</h3>
+      <p><strong>Company Name</strong> | Year - Year</p>
+      <p>
+        Describe your work, responsibilities, and achievements here.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Another Role</h3>
+      <p><strong>Company Name</strong> | Year - Year</p>
+      <p>
+        Describe your work here.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card projects">
+      <h3>Project Name</h3>
+      <p>Short description of your project.</p>
+      <a href="#">Live Demo</a> | <a href="#">GitHub</a>
+    </div>
+
+    <div class="card projects">
+      <h3>Project Name</h3>
+      <p>Short description of your project.</p>
+      <a href="#">Live Demo</a> | <a href="#">GitHub</a>
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: your@email.com</p>
+      <p>Phone: +91 XXXXX XXXXX</p>
+      <p>
+        LinkedIn: <a href="#">Your Profile</a><br>
+        GitHub: <a href="#">Your Profile</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Your Name | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
