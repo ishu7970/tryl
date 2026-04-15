@@ -1,203 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      background: #0f172a;
-      color: #e2e8f0;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #020617;
-      padding: 20px;
-      text-align: center;
-      border-bottom: 1px solid #1e293b;
-    }
-
-    header h1 {
-      font-size: 28px;
-      color: #38bdf8;
-    }
-
-    nav {
-      margin-top: 10px;
-    }
-
-    nav a {
-      margin: 0 10px;
-      color: #94a3b8;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    nav a:hover {
-      color: #38bdf8;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h2 {
-      margin-bottom: 20px;
-      color: #38bdf8;
-      border-left: 4px solid #38bdf8;
-      padding-left: 10px;
-    }
-
-    .card {
-      background: #020617;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      border: 1px solid #1e293b;
-    }
-
-    .skills span {
-      display: inline-block;
-      background: #1e293b;
-      padding: 8px 12px;
-      margin: 5px;
-      border-radius: 20px;
-      font-size: 14px;
-    }
-
-    .projects a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-
-    .projects a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #020617;
-      border-top: 1px solid #1e293b;
-      font-size: 14px;
-    }
-
-    img.profile {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      margin-bottom: 15px;
-      border: 2px solid #38bdf8;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 22px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Square Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom hover effect for buttons to make them pop */
+        .hover-pop {
+            transition: all 0.3s ease-in-out;
+        }
+        .hover-pop:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+        }
+    </style>
 </head>
+<body class="bg-slate-50 font-sans text-slate-800">
 
-<body>
-
-  <header>
-    <img src="your-photo.jpg" alt="Profile Photo" class="profile">
-    <h1>Your Name</h1>
-    <p>Your Tagline / Short Intro</p>
-
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+    <nav class="bg-white shadow-md py-4 px-6 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-extrabold text-blue-700 tracking-tight">Success Square Academy</h1>
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="text-slate-600 hover:text-blue-600 font-semibold transition-colors">Home</a>
+                <a href="#about" class="text-slate-600 hover:text-blue-600 font-semibold transition-colors">About Us</a>
+                <a href="#campus" class="text-slate-600 hover:text-blue-600 font-semibold transition-colors">Campus</a>
+                <a href="#contact" class="text-slate-600 hover:text-blue-600 font-semibold transition-colors">Contact</a>
+            </div>
+            <button class="bg-blue-600 text-white px-5 py-2 rounded-md font-bold hover:bg-blue-800 hover-pop">
+                Student Login
+            </button>
+        </div>
     </nav>
-  </header>
 
-  <section id="about">
-    <h2>About</h2>
-    <div class="card">
-      <p>
-        Write a short introduction about yourself here. Mention your background,
-        goals, and what you are passionate about.
-      </p>
-    </div>
-  </section>
+    <header class="relative w-full h-[80vh] flex items-center justify-center">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop" 
+                 alt="Students walking on school campus" 
+                 class="w-full h-full object-cover brightness-50">
+        </div>
+        
+        <div class="relative z-10 text-center px-4">
+            <h2 class="text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">Excellence in Education</h2>
+            <p class="text-xl text-slate-200 mb-10 max-w-2xl mx-auto drop-shadow-md">Empowering the next generation of leaders, thinkers, and innovators through holistic learning and practical knowledge.</p>
+            
+            <div class="flex justify-center space-x-4">
+                <button class="bg-amber-500 text-white px-8 py-3 rounded-lg font-bold text-lg hover:bg-amber-600 hover-pop">
+                    Enroll Now
+                </button>
+                <button class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-bold text-lg hover:bg-white hover:text-slate-900 hover-pop">
+                    Take a Tour
+                </button>
+            </div>
+        </div>
+    </header>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="card skills">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>React</span>
-      <span>TypeScript</span>
-      <span>Git</span>
-    </div>
-  </section>
+    <main class="max-w-7xl mx-auto py-16 px-6 grid md:grid-cols-2 gap-12 items-center" id="about">
+        <div>
+            <h3 class="text-3xl font-bold text-slate-800 mb-4">Welcome to Our Community</h3>
+            <p class="text-slate-600 leading-relaxed mb-6">
+                At Success Square Academy, we believe in providing a rigorous academic environment balanced with extracurricular activities. Our state-of-the-art facilities and dedicated faculty ensure that every student reaches their full potential.
+            </p>
+            <ul class="space-y-3 mb-8">
+                <li class="flex items-center text-slate-700">
+                    <span class="text-blue-500 mr-2">✓</span> Advanced Computer Labs
+                </li>
+                <li class="flex items-center text-slate-700">
+                    <span class="text-blue-500 mr-2">✓</span> Comprehensive Sports Programs
+                </li>
+                <li class="flex items-center text-slate-700">
+                    <span class="text-blue-500 mr-2">✓</span> Focus on Critical Thinking
+                </li>
+            </ul>
+            <button class="bg-slate-800 text-white px-6 py-2 rounded font-semibold hover:bg-slate-700 hover-pop">
+                Read Our Story
+            </button>
+        </div>
+        
+        <div class="rounded-xl overflow-hidden shadow-xl">
+            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=2132&auto=format&fit=crop" 
+                 alt="Students in classroom" 
+                 class="w-full h-auto hover:scale-105 transition-transform duration-500">
+        </div>
+    </main>
 
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="card">
-      <h3>Job Title / Role</h3>
-      <p><strong>Company Name</strong> | Year - Year</p>
-      <p>
-        Describe your work, responsibilities, and achievements here.
-      </p>
-    </div>
+    <section class="bg-slate-100 py-16" id="contact">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-10">
+                <h3 class="text-3xl font-bold text-slate-800 mb-2">Locate Our Campus</h3>
+                <p class="text-slate-500">Visit us during regular school hours for a guided tour.</p>
+            </div>
+            
+            <div class="bg-white p-4 rounded-xl shadow-lg border border-slate-200">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112001.38575003053!2d77.12648754160497!3d28.643684629471186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1713165200000!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="rounded-lg">
+                </iframe>
+            </div>
+        </div>
+    </section>
 
-    <div class="card">
-      <h3>Another Role</h3>
-      <p><strong>Company Name</strong> | Year - Year</p>
-      <p>
-        Describe your work here.
-      </p>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-
-    <div class="card projects">
-      <h3>Project Name</h3>
-      <p>Short description of your project.</p>
-      <a href="#">Live Demo</a> | <a href="#">GitHub</a>
-    </div>
-
-    <div class="card projects">
-      <h3>Project Name</h3>
-      <p>Short description of your project.</p>
-      <a href="#">Live Demo</a> | <a href="#">GitHub</a>
-    </div>
-
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="card">
-      <p>Email: your@email.com</p>
-      <p>Phone: +91 XXXXX XXXXX</p>
-      <p>
-        LinkedIn: <a href="#">Your Profile</a><br>
-        GitHub: <a href="#">Your Profile</a>
-      </p>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2026 Your Name | All Rights Reserved</p>
-  </footer>
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center">
+        <p>&copy; 2026 Success Square Academy. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
